@@ -1,3 +1,6 @@
+DjangoTemplate
+==============
+forked from
 pinax-project-account
 =====================
 
