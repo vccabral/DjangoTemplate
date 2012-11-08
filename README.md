@@ -13,9 +13,9 @@ Usage:
 
 Example:
 
-    rm -rf SexyKisses/
-    django-admin.py startproject --template=https://github.com/vccabral/pinax-project-account/zipball/master SexyKisses
-    cd SexyKisses/
+    rm -rf BangGangOfFour/
+    django-admin.py startproject --template=https://github.com/vccabral/pinax-project-account/zipball/master BangGangOfFour
+    cd BangGangOfFour/
     virtualenv localpython --distribute
     pip install -r requirements.txt
     //edit your settings.py to reflect your database settings. 
