@@ -24,7 +24,7 @@ Example:
     python manage.py runserver
 
 THENN.....
-Edit the {% block navbox %} in ./publicface/templates/site_base.html
+Edit the {% block navbox %} in ./publicface/templates/site_base_private.html
 {% block nav %}
 <ul class="nav">
     <li id="tab_fifth">
@@ -34,7 +34,7 @@ Edit the {% block navbox %} in ./publicface/templates/site_base.html
 {% endblock %}
 
 And create extra replicas of /publicface/template/publichome.html with the following block in them.
-{% extends "site_base.html" %}
+{% extends "site_base_private.html" %}
 {% block head_title %}{% trans "Welcome" %}{% endblock %}
 {% block body %}
 {% endblock %}
