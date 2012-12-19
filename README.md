@@ -23,7 +23,10 @@ Example:
     python manage.py syncdb
     python manage.py runserver
 
-THENN.....
+THENN.....start using south for db migrations
+    python manage.py schemamigration publicface --initial
+
+THENNNN....
 Edit the {% block navbox %} in ./publicface/templates/site_base_private.html
 {% block nav %}
 <ul class="nav">
@@ -38,3 +41,6 @@ And create extra replicas of /publicface/template/publichome.html with the follo
 {% block head_title %}{% trans "Welcome" %}{% endblock %}
 {% block body %}
 {% endblock %}
+
+THEN....make db schema change and follow the south documentation.....
+http://south.readthedocs.org/en/latest/tutorial/part1.html
