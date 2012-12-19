@@ -16,8 +16,9 @@ Example:
     rm -rf BangGangOfFour/
     django-admin.py startproject --template=https://github.com/vccabral/DjangoTemplate/zipball/master BangGangOfFour
     cd BangGangOfFour/
-    virtualenv localpython --distribute
+    virtualenv localpython
+    source localpython/bin/activate
     pip install -r requirements.txt
-    //edit your settings.py to reflect your database settings. 
+    //edit your settings.py to reflect your database settings or use the default sql lite settings. 
     python manage.py syncdb
     python manage.py runserver
