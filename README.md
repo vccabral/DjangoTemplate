@@ -14,7 +14,7 @@ Usage:
 Example:
 
     rm -rf BangGangOfFour/
-    django-admin.py startproject --template=https://github.com/vccabral/pinax-project-account/zipball/master BangGangOfFour
+    django-admin.py startproject --template=https://github.com/vccabral/DjangoTemplate/zipball/master BangGangOfFour
     cd BangGangOfFour/
     virtualenv localpython --distribute
     pip install -r requirements.txt
