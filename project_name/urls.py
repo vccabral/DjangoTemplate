@@ -10,7 +10,7 @@ admin.autodiscover()
 
 urlpatterns = patterns("",
     url(r"^home/$", direct_to_template, {"template": "homepage.html"}, name="home"),
-    url(r"^$", include(publicface.urls)),
+    url(r"^$", include("publicface.urls")),
     url(r"^admin/", include(admin.site.urls)),
     url(r"^admin/", include(admin.site.urls)),
 

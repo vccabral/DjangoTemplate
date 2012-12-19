@@ -115,6 +115,7 @@ WSGI_APPLICATION = "{{ project_name }}.wsgi.application"
 
 TEMPLATE_DIRS = [
     os.path.join(PACKAGE_ROOT, "templates"),
+    os.path.join(PROJECT_ROOT, "publicface", "templates"),
 ]
 
 INSTALLED_APPS = [
