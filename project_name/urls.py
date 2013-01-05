@@ -9,11 +9,11 @@ admin.autodiscover()
 
 
 urlpatterns = patterns("",
+    url(r"^$", redirect_to, {"url": "/home/"}, name="home_redirect"),
     url(r"^home/$", direct_to_template, {"template": "homepage.html"}, name="home"),
+    url(r'^accounts/login/$',redirect_to, {"url": "/account/login/"}),
     url(r"^user/", include("publicface.urls")),
     url(r"^admin/", include(admin.site.urls)),
-    url(r"^admin/", include(admin.site.urls)),
-
     url(r"^account/", include("account.urls")),
 )
 
